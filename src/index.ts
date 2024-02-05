@@ -22,9 +22,9 @@ client.on("ready", async () => {
   } else {
     setlang('en');
   }
-  const guild = client.guilds.cache.get('1014921352500756500');
+  const guild = client.guilds.cache.get('1186345481463414794');
   if (guild) {
-    const channel = guild.channels.cache.get('1173960818841354382');
+    const channel = guild.channels.cache.get('1186345481463414797');
 
     if (channel) {
       (channel as TextChannel).send({ content: 'Hello world' }).catch(error => {});
@@ -38,7 +38,7 @@ client.on("ready", async () => {
   }
   menutext(client);
   choiceinit(client);
-  const unixTimestamp = 1677642874;
+  /*const unixTimestamp = 1677642874;
   const dateFromTimestamp = new Date(unixTimestamp * 1000);
   const r = new Discord.RichPresence()
     .setApplicationId('1146949248617828455')
@@ -54,12 +54,12 @@ client.on("ready", async () => {
     .setStartTimestamp(dateFromTimestamp)
     .addButton('Join', 'https://discord.gg/infinite-community-1014921352500756500');
   client.user.setActivity(r);
-  client.user.setPresence({ status: "idle" });
+  client.user.setPresence({ status: "idle" });*/
 });
 
-client.once("finish", (_event) => {
+/*client.once("finish", (_event) => {
   client.user.setActivity();
-});
+});*/
 
 if (!token) {
   console.clear();
